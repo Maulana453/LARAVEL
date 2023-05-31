@@ -6,6 +6,7 @@ use App\Http\Controllers\SembilanController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProdukController;
 use App\Http\Controllers\delapanController;
+use App\Http\Controllers\FrontendController;
 
 
 /*
@@ -35,6 +36,8 @@ Route::get('/nilai', function () {
 });
 
 Route::get('/pemeriksaanform', [delapanController::class, 'index']);
+Route::get('/home', [FrontendController::class, 'index']);
+Route::get('/about', [FrontendController::class, 'about']);
 
 Route::get('/form', [FormController::class, 'index']);
 Route::post('/hasil', [FormController::class, 'hasil']);
