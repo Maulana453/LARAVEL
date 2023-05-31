@@ -1,610 +1,626 @@
-<action="{{ url('about') }}" method="POST">
+
+<!DOCTYPE html>
+<html lang="en">
+<action="{{ url('frontend/about') }}" method="POST">
     {{ csrf_field() }}
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Home</title>
-        <!-- Favicon-->
-        <link rel="icon" type="public/front/image/x-icon" href="public/front/assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href={{ asset('front/css/styles.css')}} rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-            <div class="container">
-                <a class="navbar-brand" href="#page-top"><img src={{ asset('front/assets/img/navbar-logo.svg')}} alt="..." /></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars ms-1"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link" href="{{ url('home') }}">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ url('about') }}">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container">
-                <div class="masthead-subheading">Welcome To My Website!</div>
-                <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#services">Tell Me More</a>
-            </div>
-        </header>
-        <!-- Services-->
-        <section class="page-section" id="services">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row text-center">
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">E-Commerce</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Responsive Design</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                    <div class="col-md-4">
-                        <span class="fa-stack fa-4x">
-                            <i class="fas fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="my-3">Web Security</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Portfolio Grid-->
-        <section class="page-section bg-light" id="portfolio">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 1-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img src={{ asset('public/front/assets/img/portfolio/1.jpg')}} class="img-fluid"  alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Threads</div>
-                                <div class="portfolio-caption-subheading text-muted">Illustration</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 2-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="public/front/assets/img/portfolio/2.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Explore</div>
-                                <div class="portfolio-caption-subheading text-muted">Graphic Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <!-- Portfolio item 3-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="public/front/assets/img/portfolio/3.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Finish</div>
-                                <div class="portfolio-caption-subheading text-muted">Identity</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <!-- Portfolio item 4-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="public/front/assets/img/portfolio/4.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Lines</div>
-                                <div class="portfolio-caption-subheading text-muted">Branding</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                        <!-- Portfolio item 5-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="public/front/assets/img/portfolio/5.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Southwest</div>
-                                <div class="portfolio-caption-subheading text-muted">Website Design</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <!-- Portfolio item 6-->
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="public/front/assets/img/portfolio/6.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Window</div>
-                                <div class="portfolio-caption-subheading text-muted">Photography</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-                <!-- About-->
-                <section class="page-section" id="about">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <ul class="timeline">
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>2009-2011</h4>
-                                <h4 class="subheading">Our Humble Beginnings</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>March 2011</h4>
-                                <h4 class="subheading">An Agency is Born</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>December 2015</h4>
-                                <h4 class="subheading">Transition to Full Service</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <h4>July 2020</h4>
-                                <h4 class="subheading">Phase Two Expansion</h4>
-                            </div>
-                            <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
-                        </div>
-                    </li>
-                    <li class="timeline-inverted">
-                        <div class="timeline-image">
-                            <h4>
-                                Be Part
-                                <br />
-                                Of Our
-                                <br />
-                                Story!
-                            </h4>
-                        </div>
-                    </li>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>MeetMe - Resume Website Template</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href={{ asset("front/css/bootstrap.min.css") }} >
+    <!-- Fonts -->
+    <link rel="stylesheet" type="text/css" href={{ asset("front/fonts/font-awesome.min.css") }}>
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href={{ asset("front/fonts/simple-line-icons.css") }}>
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href={{ asset("front/css/slicknav.css") }}>
+    <!-- Menu CSS -->
+    <link rel="stylesheet" type="text/css" href={{ asset("front/css/menu_sideslide.css") }}>
+    <!-- Slider CSS -->
+    <link rel="stylesheet" type="text/css" href={{ asset("front/css/slide-style.css") }}>
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href={{ asset("front/css/nivo-lightbox.css") }} >
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href={{ asset("front/css/animate.css") }}>
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href={{ asset("front/css/main.css") }}>
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href={{ asset("front/css/responsive.css") }}>
+
+  </head>
+  <body>
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <span class="icon-menu"></span>
+              <span class="icon-menu"></span>
+              <span class="icon-menu"></span>
+            </button>
+            <a href="index.html" class="navbar-brand"><h3>Maulana Lutfhan</h3></a>
+          </div>
+          <div class="collapse navbar-collapse" id="main-navbar">
+            <ul class="onepage-nev navbar-nav mr-auto w-100 justify-content-end clearfix">
+              <li class="nav-item active">
+                <a class="nav-link" href="{{ url('home') }}">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">
+                  About
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#services">
+                  Services
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#resume">
+                  Resume
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolios">
+                  Work
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Start -->
+        <ul class="onepage-nev mobile-menu">
+          <li>
+            <a href="{{ url('home') }}">Home</a>
+          </li>
+          <li>
+            <a href="#about">about</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#resume">resume</a>
+          </li>
+          <li>
+            <a href="#portfolio">Work</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <!-- Mobile Menu End -->
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Hero Area Start -->
+      <div id="hero-area" class="hero-area-bg">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-sm-12 text-center">
+              <div class="contents">
+                <h5 class="script-font wow fadeInUp" data-wow-delay="0.2s">Hi This is</h5>
+                <h2 class="head-title wow fadeInUp" data-wow-delay="0.4s">Maulana Lutfhan </h2>
+                <p class="script-font wow fadeInUp" data-wow-delay="0.6s">Front-end Web Developer and Graphic Designer</p>
+                <ul class="social-icon wow fadeInUp" data-wow-delay="0.8s">
+                  <li>
+                    <a class="facebook" href="#"><i class="icon-social-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a class="twitter" href="#"><i class="icon-social-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a class="instagram" href="#"><i class="icon-social-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a class="linkedin" href="#"><i class="icon-social-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a class="google" href="#"><i class="icon-social-google"></i></a>
+                  </li>
                 </ul>
+                <div class="header-button wow fadeInUp" data-wow-delay="1s">
+                  <a href="#" class="btn btn-common">Get a Free Quote</a>
+                </div>
+              </div>
             </div>
-        </section>
-        <!-- Team-->
-        <section class="page-section bg-light" id="team">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="public/front/assets/img/team/1.jpg" alt="..." />
-                            <h4>Parveen Anand</h4>
-                            <p class="text-muted">Lead Designer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Parveen Anand LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="public/front/assets/img/team/2.jpg" alt="..." />
-                            <h4>Diana Petersen</h4>
-                            <p class="text-muted">Lead Marketer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Diana Petersen LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="public/front/assets/img/team/3.jpg" alt="..." />
-                            <h4>Larry Parker</h4>
-                            <p class="text-muted">Lead Developer</p>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Twitter Profile"><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker Facebook Profile"><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Larry Parker LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
-                </div>
-            </div>
-        </section>
-        <!-- Clients-->
-        <div class="py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="public/front/assets/img/logos/microsoft.svg" alt="..." aria-label="Microsoft Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="public/front/assets/img/logos/google.svg" alt="..." aria-label="Google Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="public/front/assets/img/logos/facebook.svg" alt="..." aria-label="Facebook Logo" /></a>
-                    </div>
-                    <div class="col-md-3 col-sm-6 my-3">
-                        <a href="#!"><img class="img-fluid img-brand d-block mx-auto" src="public/front/assets/img/logos/ibm.svg" alt="..." aria-label="IBM Logo" /></a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-        <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container">
-                <div class="text-center">
-                    <h2 class="section-heading text-uppercase">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-                </div>
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- * * SB Forms Contact Form * *-->
-                <!-- * * * * * * * * * * * * * * *-->
-                <!-- This form is pre-integrated with SB Forms.-->
-                <!-- To make this form functional, sign up at-->
-                <!-- https://startbootstrap.com/solution/contact-forms-->
-                <!-- to get an API token!-->
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                    <div class="row align-items-stretch mb-5">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <!-- Name input-->
-                                <input class="form-control" id="name" type="text" placeholder="Your Name *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <div class="form-group">
-                                <!-- Email address input-->
-                                <input class="form-control" id="email" type="email" placeholder="Your Email *" data-sb-validations="required,email" />
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <div class="form-group mb-md-0">
-                                <!-- Phone number input-->
-                                <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" data-sb-validations="required" />
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group form-group-textarea mb-md-0">
-                                <!-- Message input-->
-                                <textarea class="form-control" id="message" placeholder="Your Message *" data-sb-validations="required"></textarea>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                        </div>
+      </div>
+      <!-- Hero Area End -->
+
+    </header>
+    <!-- Header Area wrapper End -->
+
+    <!-- About Section Start -->
+<section id="about" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
+              <img class="img-fluid" src={{ asset("front/img/about/gambar3.webp")}} alt="">
+            </div>
+          </div> 
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
+              <h3>Hi Guys!</h3>
+              <p>I am an information system study program student who has an interest in frontend and graphic design.</p>
+              <div class="about-profile">
+                <ul class="admin-profile">
+                  <li><span class="pro-title"> Name </span> <span class="pro-detail">Maulana Lutfhan Hamam</span></li>
+                  <li><span class="pro-title"> Age </span> <span class="pro-detail">20 Years</span></li>
+                  <li><span class="pro-title"> Experience </span> <span class="pro-detail">2 Years</span></li>
+                  <li><span class="pro-title"> Country </span> <span class="pro-detail">Indonesia</span></li>
+                  <li><span class="pro-title"> Location </span> <span class="pro-detail">Bogor, Jawa Barat</span></li>
+                  <li><span class="pro-title"> e-mail </span> <span class="pro-detail">maul21164si.nurulfikri.ac.id</span></li>
+                  <li><span class="pro-title"> Phone </span> <span class="pro-detail">+ 62 895 067 2992</span></li>
+                  <li><span class="pro-title"> Freelance </span> <span class="pro-detail">Available</span></li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn-common"><i class="icon-paper-clip"></i> Download Resume</a>
+              <a href="#" class="btn btn-danger"><i class="icon-speech"></i> Contact Me</a>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Services Section Start -->
+    <section id="services" class="services section-padding">
+      <h2 class="section-title wow flipInX" data-wow-delay="0.4s">What I do</h2>
+      <div class="container">
+        <div class="row">
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-3 col-xs-12">
+            <div class="services-item wow fadeInDown" data-wow-delay="0.3s">
+              <div class="icon">
+                <i class="icon-grid"></i>
+              </div>
+              <div class="services-content">
+                <h3><a href="#">Front-end Development</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-3 col-xs-12">
+            <div class="services-item wow fadeInDown" data-wow-delay="0.6s">
+              <div class="icon">
+                <i class="icon-layers"></i>
+              </div>
+              <div class="services-content">
+                <h3><a href="#">Graphic Design</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-3 col-xs-12">
+            <div class="services-item wow fadeInDown" data-wow-delay="0.9s">
+              <div class="icon">
+                <i class="icon-briefcase"></i>
+              </div>
+              <div class="services-content">
+                <h3><a href="#">Business Branding</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Services item -->
+          <div class="col-md-6 col-lg-3 col-xs-12">
+            <div class="services-item wow fadeInDown" data-wow-delay="1.2s">
+              <div class="icon">
+                <i class="icon-bubbles"></i>
+              </div>
+              <div class="services-content">
+                <h3><a href="#">Consultancy</a></h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse condi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- Resume Section Start -->
+    <div id="resume" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="education wow fadeInRight" data-wow-delay="0.3s">
+              <ul class="timeline">
+                <li>
+                  <i class="icon-graduation"></i>
+                  <h2 class="timelin-title">Education</h2>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <h3 class="line-title">Bsc In CSE - Yale University</h3>
+                    <span>2012 - 2016</span>
+                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <h3 class="line-title">Higher Secondary School - San Francisco College</h3>
+                    <span>2010 - 2012</span>
+                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <h3 class="line-title">Secondary School - Labratory High School</h3>
+                    <span>2005 - 2010</span>
+                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="experience wow fadeInRight" data-wow-delay="0.6s">
+              <ul class="timeline">
+                <li>
+                  <i class="icon-briefcase"></i>
+                  <h2 class="timelin-title">Experience</h2>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <h3 class="line-title">Art Director - Tesla Inc.</h3>
+                    <span>Jan 2018 - Present</span>
+                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <h3 class="line-title">UX/UI Designer - Samsung</h3>
+                    <span>Nov 2016 - Dec 2017</span>
+                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="content-text">
+                    <h3 class="line-title">Intern UI Designer - UIdeck</h3>
+                    <span>Mar 2015 - Oct 2016</span>
+                    <p class="line-text">Expenses as material breeding insisted building to in. Continual so distrusts pronounce by unwilling listening. Thing do taste on we manor.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Resume Section End -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolios" class="section-padding">
+      <!-- Container Starts -->
+      <div class="container">        
+        <h2 class="section-title wow flipInX" data-wow-delay="0.4s">My Remarkable Works</h2>
+        <div class="row">          
+          <div class="col-md-12">
+            <!-- Portfolio Controller/Buttons -->
+            <div class="controls text-center">
+              <a class="filter active btn btn-common" data-filter="all">
+                All 
+              </a>
+              <a class="filter btn btn-common" data-filter=".design">
+                Design 
+              </a>
+              <a class="filter btn btn-common" data-filter=".development">
+                Development
+              </a>
+              <a class="filter btn btn-common" data-filter=".print">
+                Print 
+              </a>
+            </div>
+            <!-- Portfolio Controller/Buttons Ends-->
+          </div>
+
+          <!-- Portfolio Recent Projects -->
+          <div id="portfolio" class="row wow fadeInDown" data-wow-delay="0.4s">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="assets/img/gallery/img-1.jpg" alt="" />  
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="lightbox preview" href="assets/img/gallery/img-1.jpg">
+                        <i class="icon-eye"></i>
+                      </a>
+                      <a class="link" href="#">
+                        <i class="icon-link"></i>
+                      </a>
                     </div>
-                    <!-- Submit success message-->
-                    <!---->
-                    <!-- This is what your users will see when the form-->
-                    <!-- has successfully submitted-->
-                    <div class="d-none" id="submitSuccessMessage">
-                        <div class="text-center text-white mb-3">
-                            <div class="fw-bolder">Form submission successful!</div>
-                            To activate this form, sign up at
-                            <br />
-                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                        </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design print">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="assets/img/gallery/img-2.jpg" alt=""/> 
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="lightbox preview" href="assets/img/gallery/img-2.jpg">
+                        <i class="icon-eye"></i>
+                      </a>
+                      <a class="link" href="#">
+                        <i class="icon-link"></i>
+                      </a>
                     </div>
-                    <!-- Submit error message-->
-                    <!---->
-                    <!-- This is what your users will see when there is-->
-                    <!-- an error submitting the form-->
-                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                    <!-- Submit Button-->
-                    <div class="text-center"><button class="btn btn-primary btn-xl text-uppercase disabled" id="submitButton" type="submit">Send Message</button></div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="assets/img/gallery/img-3.jpg" alt=""/> 
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="lightbox preview" href="assets/img/gallery/img-3.jpg">
+                        <i class="icon-eye"></i>
+                      </a>
+                      <a class="link" href="#">
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development design">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="assets/img/gallery/img-4.jpg" alt="" /> 
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="lightbox preview" href="assets/img/gallery/img-4.jpg">
+                        <i class="icon-eye"></i>
+                      </a>
+                      <a class="link" href="#">
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="assets/img/gallery/img-5.jpg" alt="" /> 
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="lightbox preview" href="assets/img/gallery/img-5.jpg">
+                        <i class="icon-eye"></i>
+                      </a>
+                      <a class="link" href="#">
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix print design">
+              <div class="portfolio-item">
+                <div class="shot-item">
+                  <img src="assets/img/gallery/img-6.jpg" alt=""/>
+                  <div class="overlay">
+                    <div class="icons">
+                      <a class="lightbox preview" href="assets/img/gallery/img-6.jpg">
+                        <i class="icon-eye"></i>
+                      </a>
+                      <a class="link" href="#">
+                        <i class="icon-link"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Container Ends -->
+    </section>
+    <!-- Portfolio Section Ends --> 
+
+    <!-- Counter Area Start-->
+    <section class="counter-section section-padding">
+      <div class="container">
+        <div class="row">
+          <!-- Counter Item -->
+          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+            <div class="counter wow fadeInDown" data-wow-delay="0.3s">
+              <div class="icon"><i class="icon-briefcase"></i></div>
+              <div class="counterUp">250</div>
+              <p>Project Working</p>
+            </div>
+          </div>
+          <!-- Counter Item -->
+          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+            <div class="counter wow fadeInDown" data-wow-delay="0.6s">
+              <div class="icon"><i class="icon-check"></i></div>
+              <div class="counterUp">950</div>
+              <p>Project Done</p>
+            </div>
+          </div>
+          <!-- Counter Item -->
+          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+            <div class="counter wow fadeInDown" data-wow-delay="0.9s">
+              <div class="icon"><i class="icon-diamond"></i></div>
+              <div class="counterUp">150</div>
+              <p>Awards Received</p>
+            </div>
+          </div>
+          <!-- Counter Item -->
+          <div class="col-md-3 col-sm-6 work-counter-widget text-center">
+            <div class="counter wow fadeInDown" data-wow-delay="1.2s">
+              <div class="icon"><i class="icon-heart"></i></div>
+              <div class="counterUp">299</div>
+              <p>Happy Clients</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Counter Area End-->
+
+    <!-- Contact Section Start -->
+    <section id="contact" class="section-padding">      
+      <div class="contact-form">
+        <div class="container">
+          <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.4s">          
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <div class="contact-block">
+                <h2>Contact Form</h2>
+                <form id="contactForm">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required data-error="Please enter your name">
+                        <div class="help-block with-errors"></div>
+                      </div>                                 
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" placeholder="Email" id="email" class="form-control" name="email" required data-error="Please enter your email">
+                        <div class="help-block with-errors"></div>
+                      </div> 
+                    </div>
+                     <div class="col-md-12">
+                      <div class="form-group">
+                        <input type="text" placeholder="Subject" id="msg_subject" class="form-control" required data-error="Please enter your subject">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group"> 
+                        <textarea class="form-control" id="message" placeholder="Your Message" rows="5" data-error="Write your message" required></textarea>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                      <div class="submit-button">
+                        <button class="btn btn-common" id="submit" type="submit">Send Message</button>
+                        <div id="msgSubmit" class="h3 text-center hidden"></div> 
+                        <div class="clearfix"></div> 
+                      </div>
+                    </div>
+                  </div>            
                 </form>
+              </div>
             </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer py-4">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-4 text-lg-start">Copyright &copy; Your Website 2023</div>
-                    <div class="col-lg-4 my-3 my-lg-0">
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-dark btn-social mx-2" href="#!" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <div class="col-md-6 col-lg-6 col-sm-12">
+              <div class="footer-right-area wow fadeIn">
+                <h2>Contact Address</h2>
+                <div class="footer-right-contact">
+                  <div class="single-contact">
+                    <div class="contact-icon">
+                      <i class="fa fa-map-marker"></i>
                     </div>
-                    <div class="col-lg-4 text-lg-end">
-                        <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
-                        <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+                    <p>San Francisco, CA</p>
+                  </div>
+                  <div class="single-contact">
+                    <div class="contact-icon">
+                      <i class="fa fa-envelope"></i>
                     </div>
+                    <p><a href="mailto:hello@tom.com">hello@tom.com</a></p>
+                    <p><a href="mailto:tomsaulnier@gmail.com">tomsaulnier@gmail.com</a></p>
+                  </div>
+                  <div class="single-contact">
+                    <div class="contact-icon">
+                      <i class="fa fa-phone"></i>
+                    </div>
+                    <p><a href="#">+ (00) 123 456 789</a></p>
+                    <p><a href="#">+ (00) 123 344 789</a></p>
+                  </div>
                 </div>
+              </div>
             </div>
-        </footer>
-        <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="public/front/assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="public/front/assets/img/portfolio/1.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Threads
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Illustration
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-12">
+            <object style="border:0; height: 450px; width: 100%;" data="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d34015.943594576835!2d-106.43242624069771!3d31.677719472407432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75d90e99d597b%3A0x6cd3eb9a9fcd23f1!2sCourtyard+by+Marriott+Ciudad+Juarez!5e0!3m2!1sen!2sbd!4v1533791187584"></object>
             </div>
+          </div>
         </div>
-        <!-- Portfolio item 2 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="public/front/assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="public/front/assets/img/portfolio/2.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Explore
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Graphic Design
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      </div>   
+    </section>
+    <!-- Contact Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer-area section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-text text-center wow fadeInDown" data-wow-delay="0.3s">
+              <ul class="social-icon">
+                <li>
+                  <a class="facebook" href="#"><i class="icon-social-facebook"></i></a>
+                </li>
+                <li>
+                  <a class="twitter" href="#"><i class="icon-social-twitter"></i></a>
+                </li>
+                <li>
+                  <a class="instagram" href="#"><i class="icon-social-instagram"></i></a>
+                </li>
+                <li>
+                  <a class="instagram" href="#"><i class="icon-social-linkedin"></i></a>
+                </li>
+                <li>
+                  <a class="instagram" href="#"><i class="icon-social-google"></i></a>
+                </li>
+              </ul>
+              <p>Copyright © 2018 UIdeck All Right Reserved</p>
             </div>
+          </div>
         </div>
-        <!-- Portfolio item 3 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="public/front/assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="public/front/assets/img/portfolio/3.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Finish
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Identity
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 4 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="public/front/assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="public/front/assets/img/portfolio/4.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Lines
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Branding
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 5 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="public/front/assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="public/front/assets/img/portfolio/5.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Southwest
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Website Design
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Portfolio item 6 modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="public/front/assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    <!-- Project details-->
-                                    <h2 class="text-uppercase">Project Name</h2>
-                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                                    <img class="img-fluid d-block mx-auto" src="public/front/assets/img/portfolio/6.jpg" alt="..." />
-                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                                    <ul class="list-inline">
-                                        <li>
-                                            <strong>Client:</strong>
-                                            Window
-                                        </li>
-                                        <li>
-                                            <strong>Category:</strong>
-                                            Photography
-                                        </li>
-                                    </ul>
-                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                        <i class="fas fa-xmark me-1"></i>
-                                        Close Project
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="public/front/js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="icon-arrow-up"></i>
+    </a>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src={{ asset("front/js/popper.min.js")}}></script>
+    <script src={{ asset("front/js/jquery-min.js")}}></script>
+    <script src={{ asset("front/js/bootstrap.min.js")}}></script>
+    <script src={{ asset("front/js/jquery.mixitup.js")}}></script>
+    <script src={{ asset("front/js/jquery.counterup.min.js")}}></script>
+    <script src={{ asset("front/js/waypoints.min.js")}}></script>
+    <script src={{ asset("front/js/wow.js")}}></script>
+    <script src={{ asset("front/js/jquery.nav.js")}}></script>
+    <script src={{ asset("front/js/jquery.easing.min.js")}}></script>  
+    <script src={{ asset("front/js/nivo-lightbox.js")}}></script>
+    <script src={{ asset("front/js/jquery.slicknav.js")}}></script>
+    <script src={{ asset("front/js/main.js")}}></script>
+    <script src={{ asset("front/js/form-validator.min.js")}}></script>
+    <script src={{ asset("front/js/contact-form-script.min.js")}}></script>
+    <script src={{ asset("front/js/map.js")}}></script>
+      
+  </body>
+</html>

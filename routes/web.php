@@ -36,8 +36,8 @@ Route::get('/nilai', function () {
 });
 
 Route::get('/pemeriksaanform', [delapanController::class, 'index']);
-Route::get('/home', [FrontendController::class, 'index']);
-Route::get('/about', [FrontendController::class, 'about']);
+Route::get('/frontend/home', [FrontendController::class, 'index']);
+Route::get('/frontend/about', [FrontendController::class, 'frontend/about']);
 
 Route::get('/form', [FormController::class, 'index']);
 Route::post('/hasil', [FormController::class, 'hasil']);

@@ -1,14 +1,34 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  </head>
-  <body>
 
-    <h2>Hallo selamat siang nama saya {{ $nama }}, umur saya {{ $umur }}</h2>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-  </body>
-</html>
+<!-- About Section Start -->
+<section id="about" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
+              <img class="img-fluid" src={{ asset("public/front/img/about/about-2.jpg")}} alt="">
+            </div>
+          </div> 
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+            <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
+              <h3>Hi Guys!</h3>
+              <p>Est diam venenatis arcu lacus ad. Duis quis eros. Cursus et rutrum eleifend sollicitudin lacinia justo id turpis. Nec convallis integer. Odio eget duis. Nulla aenean et. Blandit varius sollicitudin. Pellentesque leo primis neque urna magnis. Elit ut sollicitudin. Et est a nam dolores eget itaque sagittis et parturient duis est eleifend sociis rutrum odio viverra integer.</p>
+              <div class="about-profile">
+                <ul class="admin-profile">
+                  <li><span class="pro-title"> Name </span> <span class="pro-detail">Tom Saulnier</span></li>
+                  <li><span class="pro-title"> Age </span> <span class="pro-detail">25 Years</span></li>
+                  <li><span class="pro-title"> Experience </span> <span class="pro-detail">4 Years</span></li>
+                  <li><span class="pro-title"> Country </span> <span class="pro-detail">USA</span></li>
+                  <li><span class="pro-title"> Location </span> <span class="pro-detail">San Francisco, CA</span></li>
+                  <li><span class="pro-title"> e-mail </span> <span class="pro-detail">email@example.com</span></li>
+                  <li><span class="pro-title"> Phone </span> <span class="pro-detail">+ (00) 123 456 789</span></li>
+                  <li><span class="pro-title"> Freelance </span> <span class="pro-detail">Available</span></li>
+                </ul>
+              </div>
+              <a href="#" class="btn btn-common"><i class="icon-paper-clip"></i> Download Resume</a>
+              <a href="#" class="btn btn-danger"><i class="icon-speech"></i> Contact Me</a>
+            </div>
+          </div>   
+        </div>
+      </div>
+    </section>
+    <!-- About Section End -->
